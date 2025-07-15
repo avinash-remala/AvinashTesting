@@ -112,3 +112,4 @@
 /Users/avinashremala/Desktop/AvinashTesting/obj/Debug/net6.0/AvinashTesting.pdb
 /Users/avinashremala/Desktop/AvinashTesting/obj/Debug/net6.0/AvinashTesting.genruntimeconfig.cache
 /Users/avinashremala/Desktop/AvinashTesting/obj/Debug/net6.0/ref/AvinashTesting.dll
+/Users/avinashremala/Desktop/AvinashTesting/bin/Debug/net6.0/AvinashTesting

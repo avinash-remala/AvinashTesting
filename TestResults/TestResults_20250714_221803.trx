@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="9d6f683d-3248-4888-bf50-18a8a0dc7cd4" name="@MacBookPro 2025-07-14 22:18:11" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2025-07-14T22:18:11.4279050-05:00" queuing="2025-07-14T22:18:11.4279060-05:00" start="2025-07-14T22:18:06.2516300-05:00" finish="2025-07-14T22:18:19.2702700-05:00" />
+  <TestSettings name="default" id="e244f792-4848-4a05-9d01-df433a02c72b">
+    <Deployment runDeploymentRoot="_MacBookPro_2025-07-14_22_18_11" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="d25e3598-33f3-44ab-ba71-28466639085f" testId="7e553864-2619-065a-b95c-fcb4c8f766d7" testName="LoginWithInvalidUsername" computerName="MacBookPro" duration="00:00:02.8210870" startTime="2025-07-14T22:18:16.3668620-05:00" endTime="2025-07-14T22:18:19.1879770-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d25e3598-33f3-44ab-ba71-28466639085f">
+      <Output>
+        <StdOut>\ud83d\ude80 Starting scenario: Login with invalid username
+Given the user is on the invalid login page
+-&gt; done: InvalidLoginTestSteps.GivenTheUserIsOnTheInvalidLoginPage() (0.6s)
+When the user enters invalid username 'invaliduser' and password 'Password123'
+-&gt; done: InvalidLoginTestSteps.WhenTheUserEntersInvalidUsernameAndPassword("invaliduser", "Password123") (0.2s)
+And clicks the invalid login button
+-&gt; done: InvalidLoginTestSteps.WhenClicksTheInvalidLoginButton() (0.1s)
+Then the user should see an error message for invalid username
+-&gt; done: InvalidLoginTestSteps.ThenTheUserShouldSeeAnErrorMessageForInvalidUsername() (0.1s)
+\ud83d\udd0d AfterScenario called for: Login with invalid username
+✅ Scenario passed: Login with invalid username
+\ud83d\udcf8 Taking screenshot for passed test (optional)...
+\ud83d\udd1a Closing browser for: Login with invalid username</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="95295660-d422-4e6b-ab1f-791a7ecd5738" testId="68ad1630-9139-f55e-00a1-79ea02deb6c0" testName="LoginWithBothInvalidUsernameAndPassword" computerName="MacBookPro" duration="00:00:02.6363550" startTime="2025-07-14T22:18:11.1329980-05:00" endTime="2025-07-14T22:18:13.7693790-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="95295660-d422-4e6b-ab1f-791a7ecd5738">
+      <Output>
+        <StdOut>\ud83d\ude80 Starting scenario: Login with both invalid username and password
+Given the user is on the invalid login page
+-&gt; done: InvalidLoginTestSteps.GivenTheUserIsOnTheInvalidLoginPage() (0.5s)
+When the user enters invalid username 'invaliduser' and password 'invalidpassword'
+-&gt; done: InvalidLoginTestSteps.WhenTheUserEntersInvalidUsernameAndPassword("invaliduser", "invalidpassword") (0.2s)
+And clicks the invalid login button
+-&gt; done: InvalidLoginTestSteps.WhenClicksTheInvalidLoginButton() (0.1s)
+Then the user should see an error message for invalid credentials
+-&gt; done: InvalidLoginTestSteps.ThenTheUserShouldSeeAnErrorMessageForInvalidCredentials() (0.0s)
+\ud83d\udd0d AfterScenario called for: Login with both invalid username and password
+✅ Scenario passed: Login with both invalid username and password
+\ud83d\udcf8 Taking screenshot for passed test (optional)...
+\ud83d\udd1a Closing browser for: Login with both invalid username and password</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="704b432b-0009-44e7-9305-8367a1c0ed0c" testId="ecb7188d-3397-ec50-2219-bf6f51112a04" testName="LoginWithInvalidPassword" computerName="MacBookPro" duration="00:00:02.5972850" startTime="2025-07-14T22:18:13.7694970-05:00" endTime="2025-07-14T22:18:16.3668000-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="704b432b-0009-44e7-9305-8367a1c0ed0c">
+      <Output>
+        <StdOut>\ud83d\ude80 Starting scenario: Login with invalid password
+Given the user is on the invalid login page
+-&gt; done: InvalidLoginTestSteps.GivenTheUserIsOnTheInvalidLoginPage() (0.5s)
+When the user enters invalid username 'student' and password 'invalidpassword'
+-&gt; done: InvalidLoginTestSteps.WhenTheUserEntersInvalidUsernameAndPassword("student", "invalidpassword") (0.3s)
+And clicks the invalid login button
+-&gt; done: InvalidLoginTestSteps.WhenClicksTheInvalidLoginButton() (0.1s)
+Then the user should see an error message for invalid password
+-&gt; done: InvalidLoginTestSteps.ThenTheUserShouldSeeAnErrorMessageForInvalidPassword() (0.1s)
+\ud83d\udd0d AfterScenario called for: Login with invalid password
+✅ Scenario passed: Login with invalid password
+\ud83d\udcf8 Taking screenshot for passed test (optional)...
+\ud83d\udd1a Closing browser for: Login with invalid password</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="db546232-88fc-4183-bcf5-8b01796e4161" testId="bc50d387-b797-3881-6fa2-118623bb9edb" testName="SuccessfulLoginAndLogoutWithValidCredentials" computerName="MacBookPro" duration="00:00:03.6128090" startTime="2025-07-14T22:18:07.5097820-05:00" endTime="2025-07-14T22:18:11.1225190-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="db546232-88fc-4183-bcf5-8b01796e4161">
+      <Output>
+        <StdOut>\ud83d\ude80 Starting scenario: Successful login and logout with valid credentials
+Given the user is on the Avi login page
+-&gt; done: AviLoginTestSteps.GivenTheUserIsOnTheAviLoginPage() (0.6s)
+When the user enters username 'student' and password 'Password123'
+-&gt; done: AviLoginTestSteps.WhenTheUserEntersUsernameAndPassword("student", "Password123") (0.2s)
+And clicks the login button
+-&gt; done: AviLoginTestSteps.WhenClicksTheLoginButton() (0.6s)
+Then the user should be navigated to the secure area
+-&gt; done: AviLoginTestSteps.ThenTheUserShouldBeNavigatedToTheSecureArea() (0.0s)
+When the user clicks the logout button
+-&gt; done: AviLoginTestSteps.WhenTheUserClicksTheLogoutButton() (0.2s)
+Then the user should be logged out and redirected to the login page
+-&gt; done: AviLoginTestSteps.ThenTheUserShouldBeLoggedOutAndRedirectedToTheLoginPage() (0.0s)
+\ud83d\udd0d AfterScenario called for: Successful login and logout with valid credentials
+✅ Scenario passed: Successful login and logout with valid credentials
+\ud83d\udcf8 Taking screenshot for passed test (optional)...
+\ud83d\udd1a Closing browser for: Successful login and logout with valid credentials</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="LoginWithInvalidUsername" storage="/users/avinashremala/desktop/avinashtesting/bin/debug/net6.0/avinashtesting.dll" id="7e553864-2619-065a-b95c-fcb4c8f766d7">
+      <Execution id="d25e3598-33f3-44ab-ba71-28466639085f" />
+      <TestMethod codeBase="/Users/avinashremala/Desktop/AvinashTesting/bin/Debug/net6.0/AvinashTesting.dll" adapterTypeName="executor://nunit3testexecutor/" className="AvinashTesting.Features.InvalidLoginTestFeature" name="LoginWithInvalidUsername" />
+    </UnitTest>
+    <UnitTest name="LoginWithBothInvalidUsernameAndPassword" storage="/users/avinashremala/desktop/avinashtesting/bin/debug/net6.0/avinashtesting.dll" id="68ad1630-9139-f55e-00a1-79ea02deb6c0">
+      <Execution id="95295660-d422-4e6b-ab1f-791a7ecd5738" />
+      <TestMethod codeBase="/Users/avinashremala/Desktop/AvinashTesting/bin/Debug/net6.0/AvinashTesting.dll" adapterTypeName="executor://nunit3testexecutor/" className="AvinashTesting.Features.InvalidLoginTestFeature" name="LoginWithBothInvalidUsernameAndPassword" />
+    </UnitTest>
+    <UnitTest name="LoginWithInvalidPassword" storage="/users/avinashremala/desktop/avinashtesting/bin/debug/net6.0/avinashtesting.dll" id="ecb7188d-3397-ec50-2219-bf6f51112a04">
+      <Execution id="704b432b-0009-44e7-9305-8367a1c0ed0c" />
+      <TestMethod codeBase="/Users/avinashremala/Desktop/AvinashTesting/bin/Debug/net6.0/AvinashTesting.dll" adapterTypeName="executor://nunit3testexecutor/" className="AvinashTesting.Features.InvalidLoginTestFeature" name="LoginWithInvalidPassword" />
+    </UnitTest>
+    <UnitTest name="SuccessfulLoginAndLogoutWithValidCredentials" storage="/users/avinashremala/desktop/avinashtesting/bin/debug/net6.0/avinashtesting.dll" id="bc50d387-b797-3881-6fa2-118623bb9edb">
+      <Execution id="db546232-88fc-4183-bcf5-8b01796e4161" />
+      <TestMethod codeBase="/Users/avinashremala/Desktop/AvinashTesting/bin/Debug/net6.0/AvinashTesting.dll" adapterTypeName="executor://nunit3testexecutor/" className="AvinashTesting.Features.AviLoginTestFeature" name="SuccessfulLoginAndLogoutWithValidCredentials" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="7e553864-2619-065a-b95c-fcb4c8f766d7" executionId="d25e3598-33f3-44ab-ba71-28466639085f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="68ad1630-9139-f55e-00a1-79ea02deb6c0" executionId="95295660-d422-4e6b-ab1f-791a7ecd5738" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ecb7188d-3397-ec50-2219-bf6f51112a04" executionId="704b432b-0009-44e7-9305-8367a1c0ed0c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bc50d387-b797-3881-6fa2-118623bb9edb" executionId="db546232-88fc-4183-bcf5-8b01796e4161" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="4" executed="4" passed="4" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 4.6.0.0: Test execution started
+Running all tests in /Users/avinashremala/Desktop/AvinashTesting/bin/Debug/net6.0/AvinashTesting.dll
+   NUnit3TestExecutor discovered 4 of 4 NUnit test cases using Current Discovery mode, Non-Explicit run
+Starting ChromeDriver 138.0.7204.94 (5450257488848fa5bab09dea663ce77edfb17672-refs/branch-heads/7204_50@{#10}) on port 54649
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 54649.
+\ud83d\ude80 Starting scenario: Successful login and logout with valid credentials
+Given the user is on the Avi login page
+-&gt; done: AviLoginTestSteps.GivenTheUserIsOnTheAviLoginPage() (0.6s)
+When the user enters username 'student' and password 'Password123'
+-&gt; done: AviLoginTestSteps.WhenTheUserEntersUsernameAndPassword("student", "Password123") (0.2s)
+And clicks the login button
+-&gt; done: AviLoginTestSteps.WhenClicksTheLoginButton() (0.6s)
+Then the user should be navigated to the secure area
+-&gt; done: AviLoginTestSteps.ThenTheUserShouldBeNavigatedToTheSecureArea() (0.0s)
+When the user clicks the logout button
+-&gt; done: AviLoginTestSteps.WhenTheUserClicksTheLogoutButton() (0.2s)
+Then the user should be logged out and redirected to the login page
+-&gt; done: AviLoginTestSteps.ThenTheUserShouldBeLoggedOutAndRedirectedToTheLoginPage() (0.0s)
+\ud83d\udd0d AfterScenario called for: Successful login and logout with valid credentials
+✅ Scenario passed: Successful login and logout with valid credentials
+\ud83d\udcf8 Taking screenshot for passed test (optional)...
+\ud83d\udd1a Closing browser for: Successful login and logout with valid credentials
+
+Starting ChromeDriver 138.0.7204.94 (5450257488848fa5bab09dea663ce77edfb17672-refs/branch-heads/7204_50@{#10}) on port 54715
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 54715.
+\ud83d\ude80 Starting scenario: Login with both invalid username and password
+Given the user is on the invalid login page
+-&gt; done: InvalidLoginTestSteps.GivenTheUserIsOnTheInvalidLoginPage() (0.5s)
+When the user enters invalid username 'invaliduser' and password 'invalidpassword'
+-&gt; done: InvalidLoginTestSteps.WhenTheUserEntersInvalidUsernameAndPassword("invaliduser", "invalidpassword") (0.2s)
+And clicks the invalid login button
+-&gt; done: InvalidLoginTestSteps.WhenClicksTheInvalidLoginButton() (0.1s)
+Then the user should see an error message for invalid credentials
+-&gt; done: InvalidLoginTestSteps.ThenTheUserShouldSeeAnErrorMessageForInvalidCredentials() (0.0s)
+\ud83d\udd0d AfterScenario called for: Login with both invalid username and password
+✅ Scenario passed: Login with both invalid username and password
+\ud83d\udcf8 Taking screenshot for passed test (optional)...
+\ud83d\udd1a Closing browser for: Login with both invalid username and password
+
+Starting ChromeDriver 138.0.7204.94 (5450257488848fa5bab09dea663ce77edfb17672-refs/branch-heads/7204_50@{#10}) on port 54756
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 54756.
+\ud83d\ude80 Starting scenario: Login with invalid password
+Given the user is on the invalid login page
+-&gt; done: InvalidLoginTestSteps.GivenTheUserIsOnTheInvalidLoginPage() (0.5s)
+When the user enters invalid username 'student' and password 'invalidpassword'
+-&gt; done: InvalidLoginTestSteps.WhenTheUserEntersInvalidUsernameAndPassword("student", "invalidpassword") (0.3s)
+And clicks the invalid login button
+-&gt; done: InvalidLoginTestSteps.WhenClicksTheInvalidLoginButton() (0.1s)
+Then the user should see an error message for invalid password
+-&gt; done: InvalidLoginTestSteps.ThenTheUserShouldSeeAnErrorMessageForInvalidPassword() (0.1s)
+\ud83d\udd0d AfterScenario called for: Login with invalid password
+✅ Scenario passed: Login with invalid password
+\ud83d\udcf8 Taking screenshot for passed test (optional)...
+\ud83d\udd1a Closing browser for: Login with invalid password
+
+Starting ChromeDriver 138.0.7204.94 (5450257488848fa5bab09dea663ce77edfb17672-refs/branch-heads/7204_50@{#10}) on port 54796
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 54796.
+\ud83d\ude80 Starting scenario: Login with invalid username
+Given the user is on the invalid login page
+-&gt; done: InvalidLoginTestSteps.GivenTheUserIsOnTheInvalidLoginPage() (0.6s)
+When the user enters invalid username 'invaliduser' and password 'Password123'
+-&gt; done: InvalidLoginTestSteps.WhenTheUserEntersInvalidUsernameAndPassword("invaliduser", "Password123") (0.2s)
+And clicks the invalid login button
+-&gt; done: InvalidLoginTestSteps.WhenClicksTheInvalidLoginButton() (0.1s)
+Then the user should see an error message for invalid username
+-&gt; done: InvalidLoginTestSteps.ThenTheUserShouldSeeAnErrorMessageForInvalidUsername() (0.1s)
+\ud83d\udd0d AfterScenario called for: Login with invalid username
+✅ Scenario passed: Login with invalid username
+\ud83d\udcf8 Taking screenshot for passed test (optional)...
+\ud83d\udd1a Closing browser for: Login with invalid username
+
+NUnit Adapter 4.6.0.0: Test execution complete
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

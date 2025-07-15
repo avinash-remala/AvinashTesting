@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AvinashTesting")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+73486505239ba634098ab6c295d4cebbd3cbbfb8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9de930d0867d69915b9f0c4d8a59acd429917a51")]
 [assembly: System.Reflection.AssemblyProductAttribute("AvinashTesting")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AvinashTesting")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

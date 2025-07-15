@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Report</title>
+    <style>
+
+                body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+                .header { background: #2196F3; color: white; padding: 20px; margin-bottom: 20px; border-radius: 5px; text-align: center; }
+                .summary, .results, .screenshots { background: white; padding: 20px; margin: 20px 0; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+                .test { padding: 15px; margin: 10px 0; border-left: 4px solid #ccc; background: #f9f9f9; }
+                .test.passed { border-left-color: #4CAF50; }
+                .test.failed { border-left-color: #F44336; }
+                .passed { color: green; }
+                .failed { color: red; }
+                .error { color: #d32f2f; font-style: italic; }
+                .screenshot-item { margin: 20px 0; padding: 15px; border: 1px solid #ddd; border-radius: 5px; }
+                .screenshot-preview { margin: 10px 0; }
+                .footer { background: #333; color: white; padding: 15px; text-align: center; border-radius: 5px; }
+            
+    </style>
+</head>
+<body>
+    <div class='header'>
+        <h1>🧪 Avinash Test Report</h1>
+        <p>Generated: 2025-07-14 21:07:41</p>
+    </div>
+    <div class='summary'>
+        <h2>📊 Summary</h2>
+        <p><strong>Total Tests:</strong> 4</p>
+        <p class='passed'><strong>Passed:</strong> 2 ✅</p>
+        <p class='failed'><strong>Failed:</strong> 2 ❌</p>
+        <p><strong>Success Rate:</strong> 50%</p>
+    </div>
+    <div class='results'>
+        <h2>📋 Test Results</h2>
+        <div class='test passed'>
+            <h3>✅ Successful Login and Logout</h3>
+            <p>Status: PASSED | Duration: 3.1s</p>
+        </div>
+        <div class='test passed'>
+            <h3>✅ Invalid Username Test</h3>
+            <p>Status: PASSED | Duration: 2.7s</p>
+        </div>
+        <div class='test failed'>
+            <h3>❌ Invalid Password Test</h3>
+            <p>Status: FAILED | Duration: 2.7s</p>
+            <p class='error'>Error: Expected to see an error message for invalid password</p>
+        </div>
+        <div class='test failed'>
+            <h3>❌ Invalid Credentials Test</h3>
+            <p>Status: FAILED | Duration: 2.6s</p>
+            <p class='error'>Error: Expected to see an error message for invalid credentials</p>
+        </div>
+    </div>
+    <div class='footer'>
+        <p>Source: TestResultsAR2.trx</p>
+        <p>Screenshots: 0 captured</p>
+    </div>
+</body>
+</html>

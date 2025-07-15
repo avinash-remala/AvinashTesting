@@ -1,53 +1,54 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TestRun id="572bc189-b4e3-4cad-90f8-8b71de853349" name="@MacBookPro 2025-07-14 19:04:26" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
-  <Times creation="2025-07-14T19:04:26.6521260-05:00" queuing="2025-07-14T19:04:26.6521260-05:00" start="2025-07-14T19:04:22.1492720-05:00" finish="2025-07-14T19:04:34.5226590-05:00" />
-  <TestSettings name="default" id="ba0f85ef-222d-46c5-92ab-7bde58b6b7ef">
-    <Deployment runDeploymentRoot="_MacBookPro_2025-07-14_19_04_26" />
+<TestRun id="8964f615-57ad-4d12-b71f-bf774e17bd1e" name="@MacBookPro 2025-07-14 20:53:43" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2025-07-14T20:53:43.0764210-05:00" queuing="2025-07-14T20:53:43.0764210-05:00" start="2025-07-14T20:53:36.9215310-05:00" finish="2025-07-14T20:53:51.9086210-05:00" />
+  <TestSettings name="default" id="b014b8be-fd90-416c-aa99-9e3ccf77641e">
+    <Deployment runDeploymentRoot="_MacBookPro_2025-07-14_20_53_43" />
   </TestSettings>
   <Results>
-    <UnitTestResult executionId="9b1e753a-0876-46cc-936d-d7f62a5a17da" testId="ecb7188d-3397-ec50-2219-bf6f51112a04" testName="LoginWithInvalidPassword" computerName="MacBookPro" duration="00:00:02.7232820" startTime="2025-07-14T19:04:29.0247720-05:00" endTime="2025-07-14T19:04:31.7480220-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9b1e753a-0876-46cc-936d-d7f62a5a17da">
+    <UnitTestResult executionId="63b904c4-f4b0-466e-a8b2-0e0aac94bb83" testId="7e553864-2619-065a-b95c-fcb4c8f766d7" testName="LoginWithInvalidUsername" computerName="MacBookPro" duration="00:00:03.1343670" startTime="2025-07-14T20:53:48.6965770-05:00" endTime="2025-07-14T20:53:51.8309040-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="63b904c4-f4b0-466e-a8b2-0e0aac94bb83">
       <Output>
         <StdOut>Given the user is on the invalid login page
 -&gt; done: InvalidLoginTestSteps.GivenTheUserIsOnTheInvalidLoginPage() (0.6s)
+When the user enters invalid username 'invaliduser' and password 'Password123'
+-&gt; done: InvalidLoginTestSteps.WhenTheUserEntersInvalidUsernameAndPassword("invaliduser", "Password123") (0.3s)
+And clicks the invalid login button
+-&gt; done: InvalidLoginTestSteps.WhenClicksTheInvalidLoginButton() (0.1s)
+Then the user should see an error message for invalid username
+-&gt; done: InvalidLoginTestSteps.ThenTheUserShouldSeeAnErrorMessageForInvalidUsername() (0.1s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1b60a7b1-5fac-404a-8df3-2d743580ae38" testId="68ad1630-9139-f55e-00a1-79ea02deb6c0" testName="LoginWithBothInvalidUsernameAndPassword" computerName="MacBookPro" duration="00:00:03.0143610" startTime="2025-07-14T20:53:42.8021750-05:00" endTime="2025-07-14T20:53:45.8164960-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1b60a7b1-5fac-404a-8df3-2d743580ae38">
+      <Output>
+        <StdOut>Given the user is on the invalid login page
+-&gt; done: InvalidLoginTestSteps.GivenTheUserIsOnTheInvalidLoginPage() (0.6s)
+When the user enters invalid username 'invaliduser' and password 'invalidpassword'
+-&gt; done: InvalidLoginTestSteps.WhenTheUserEntersInvalidUsernameAndPassword("invaliduser", "invalidpassword") (0.2s)
+And clicks the invalid login button
+-&gt; done: InvalidLoginTestSteps.WhenClicksTheInvalidLoginButton() (0.1s)
+Then the user should see an error message for invalid credentials
+-&gt; done: InvalidLoginTestSteps.ThenTheUserShouldSeeAnErrorMessageForInvalidCredentials() (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c794ca99-c602-4dcf-a68d-a9c3f6153130" testId="ecb7188d-3397-ec50-2219-bf6f51112a04" testName="LoginWithInvalidPassword" computerName="MacBookPro" duration="00:00:02.8798420" startTime="2025-07-14T20:53:45.8166680-05:00" endTime="2025-07-14T20:53:48.6964610-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c794ca99-c602-4dcf-a68d-a9c3f6153130">
+      <Output>
+        <StdOut>Given the user is on the invalid login page
+-&gt; done: InvalidLoginTestSteps.GivenTheUserIsOnTheInvalidLoginPage() (0.5s)
 When the user enters invalid username 'student' and password 'invalidpassword'
--&gt; done: InvalidLoginTestSteps.WhenTheUserEntersInvalidUsernameAndPassword("student", "invalidpassword") (0.2s)
+-&gt; done: InvalidLoginTestSteps.WhenTheUserEntersInvalidUsernameAndPassword("student", "invalidpassword") (0.3s)
 And clicks the invalid login button
 -&gt; done: InvalidLoginTestSteps.WhenClicksTheInvalidLoginButton() (0.1s)
 Then the user should see an error message for invalid password
--&gt; error:   Expected to see an error message for invalid password
-Assert.That(_invalidLoginPage.IsInvalidPasswordErrorDisplayed(), Is.True)
-  Expected: True
-  But was:  False
- (0.0s)</StdOut>
-        <ErrorInfo>
-          <Message>  Expected to see an error message for invalid password
-Assert.That(_invalidLoginPage.IsInvalidPasswordErrorDisplayed(), Is.True)
-  Expected: True
-  But was:  False
-</Message>
-          <StackTrace>   at AvinashTesting.StepDefinitions.InvalidLoginTestSteps.ThenTheUserShouldSeeAnErrorMessageForInvalidPassword() in /Users/avinashremala/Desktop/AvinashTesting/StepDefinitions/InvalidLoginTestSteps.cs:line 57
-   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
-   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)
-   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
-   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
-   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
-   at AvinashTesting.Features.InvalidLoginTestFeature.ScenarioCleanup()
-   at AvinashTesting.Features.InvalidLoginTestFeature.LoginWithInvalidPassword() in /Users/avinashremala/Desktop/AvinashTesting/Features/InvalidLoginTest.feature:line 16
-
-1)    at AvinashTesting.StepDefinitions.InvalidLoginTestSteps.ThenTheUserShouldSeeAnErrorMessageForInvalidPassword() in /Users/avinashremala/Desktop/AvinashTesting/StepDefinitions/InvalidLoginTestSteps.cs:line 57
-
-</StackTrace>
-        </ErrorInfo>
+-&gt; done: InvalidLoginTestSteps.ThenTheUserShouldSeeAnErrorMessageForInvalidPassword() (0.1s)</StdOut>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="63af3271-8b91-4c9e-880b-588b79215fe1" testId="bc50d387-b797-3881-6fa2-118623bb9edb" testName="SuccessfulLoginAndLogoutWithValidCredentials" computerName="MacBookPro" duration="00:00:03.0747790" startTime="2025-07-14T19:04:23.3178150-05:00" endTime="2025-07-14T19:04:26.3924800-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="63af3271-8b91-4c9e-880b-588b79215fe1">
+    <UnitTestResult executionId="215768c7-adee-48c5-9b59-ee57238f07d0" testId="bc50d387-b797-3881-6fa2-118623bb9edb" testName="SuccessfulLoginAndLogoutWithValidCredentials" computerName="MacBookPro" duration="00:00:04.4354550" startTime="2025-07-14T20:53:38.3563510-05:00" endTime="2025-07-14T20:53:42.7916460-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="215768c7-adee-48c5-9b59-ee57238f07d0">
       <Output>
         <StdOut>Given the user is on the Avi login page
 -&gt; done: AviLoginTestSteps.GivenTheUserIsOnTheAviLoginPage() (0.6s)
 When the user enters username 'student' and password 'Password123'
--&gt; done: AviLoginTestSteps.WhenTheUserEntersUsernameAndPassword("student", "Password123") (0.2s)
+-&gt; done: AviLoginTestSteps.WhenTheUserEntersUsernameAndPassword("student", "Password123") (0.3s)
 And clicks the login button
--&gt; done: AviLoginTestSteps.WhenClicksTheLoginButton() (0.2s)
+-&gt; done: AviLoginTestSteps.WhenClicksTheLoginButton() (0.6s)
 Then the user should be navigated to the secure area
 -&gt; done: AviLoginTestSteps.ThenTheUserShouldBeNavigatedToTheSecureArea() (0.0s)
 When the user clicks the logout button
@@ -56,98 +57,51 @@ Then the user should be logged out and redirected to the login page
 -&gt; done: AviLoginTestSteps.ThenTheUserShouldBeLoggedOutAndRedirectedToTheLoginPage() (0.0s)</StdOut>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="4973010d-4dc5-4b6f-a78b-98b705698586" testId="68ad1630-9139-f55e-00a1-79ea02deb6c0" testName="LoginWithBothInvalidUsernameAndPassword" computerName="MacBookPro" duration="00:00:02.6255140" startTime="2025-07-14T19:04:26.3990200-05:00" endTime="2025-07-14T19:04:29.0245020-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4973010d-4dc5-4b6f-a78b-98b705698586">
-      <Output>
-        <StdOut>Given the user is on the invalid login page
--&gt; done: InvalidLoginTestSteps.GivenTheUserIsOnTheInvalidLoginPage() (0.4s)
-When the user enters invalid username 'invaliduser' and password 'invalidpassword'
--&gt; done: InvalidLoginTestSteps.WhenTheUserEntersInvalidUsernameAndPassword("invaliduser", "invalidpassword") (0.2s)
-And clicks the invalid login button
--&gt; done: InvalidLoginTestSteps.WhenClicksTheInvalidLoginButton() (0.0s)
-Then the user should see an error message for invalid credentials
--&gt; error:   Expected to see an error message for invalid credentials
-Assert.That(_invalidLoginPage.IsInvalidCredentialsErrorDisplayed(), Is.True)
-  Expected: True
-  But was:  False
- (0.0s)</StdOut>
-        <ErrorInfo>
-          <Message>  Expected to see an error message for invalid credentials
-Assert.That(_invalidLoginPage.IsInvalidCredentialsErrorDisplayed(), Is.True)
-  Expected: True
-  But was:  False
-</Message>
-          <StackTrace>   at AvinashTesting.StepDefinitions.InvalidLoginTestSteps.ThenTheUserShouldSeeAnErrorMessageForInvalidCredentials() in /Users/avinashremala/Desktop/AvinashTesting/StepDefinitions/InvalidLoginTestSteps.cs:line 66
-   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
-   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)
-   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
-   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
-   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
-   at AvinashTesting.Features.InvalidLoginTestFeature.ScenarioCleanup()
-   at AvinashTesting.Features.InvalidLoginTestFeature.LoginWithBothInvalidUsernameAndPassword() in /Users/avinashremala/Desktop/AvinashTesting/Features/InvalidLoginTest.feature:line 22
-
-1)    at AvinashTesting.StepDefinitions.InvalidLoginTestSteps.ThenTheUserShouldSeeAnErrorMessageForInvalidCredentials() in /Users/avinashremala/Desktop/AvinashTesting/StepDefinitions/InvalidLoginTestSteps.cs:line 66
-
-</StackTrace>
-        </ErrorInfo>
-      </Output>
-    </UnitTestResult>
-    <UnitTestResult executionId="632c2b49-2535-4ada-9f9f-160470b2ad2d" testId="7e553864-2619-065a-b95c-fcb4c8f766d7" testName="LoginWithInvalidUsername" computerName="MacBookPro" duration="00:00:02.7071030" startTime="2025-07-14T19:04:31.7480910-05:00" endTime="2025-07-14T19:04:34.4551600-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="632c2b49-2535-4ada-9f9f-160470b2ad2d">
-      <Output>
-        <StdOut>Given the user is on the invalid login page
--&gt; done: InvalidLoginTestSteps.GivenTheUserIsOnTheInvalidLoginPage() (0.4s)
-When the user enters invalid username 'invaliduser' and password 'Password123'
--&gt; done: InvalidLoginTestSteps.WhenTheUserEntersInvalidUsernameAndPassword("invaliduser", "Password123") (0.2s)
-And clicks the invalid login button
--&gt; done: InvalidLoginTestSteps.WhenClicksTheInvalidLoginButton() (0.1s)
-Then the user should see an error message for invalid username
--&gt; done: InvalidLoginTestSteps.ThenTheUserShouldSeeAnErrorMessageForInvalidUsername() (0.0s)</StdOut>
-      </Output>
-    </UnitTestResult>
   </Results>
   <TestDefinitions>
     <UnitTest name="LoginWithInvalidUsername" storage="/users/avinashremala/desktop/avinashtesting/bin/debug/net6.0/avinashtesting.dll" id="7e553864-2619-065a-b95c-fcb4c8f766d7">
-      <Execution id="632c2b49-2535-4ada-9f9f-160470b2ad2d" />
+      <Execution id="63b904c4-f4b0-466e-a8b2-0e0aac94bb83" />
       <TestMethod codeBase="/Users/avinashremala/Desktop/AvinashTesting/bin/Debug/net6.0/AvinashTesting.dll" adapterTypeName="executor://nunit3testexecutor/" className="AvinashTesting.Features.InvalidLoginTestFeature" name="LoginWithInvalidUsername" />
     </UnitTest>
     <UnitTest name="LoginWithBothInvalidUsernameAndPassword" storage="/users/avinashremala/desktop/avinashtesting/bin/debug/net6.0/avinashtesting.dll" id="68ad1630-9139-f55e-00a1-79ea02deb6c0">
-      <Execution id="4973010d-4dc5-4b6f-a78b-98b705698586" />
+      <Execution id="1b60a7b1-5fac-404a-8df3-2d743580ae38" />
       <TestMethod codeBase="/Users/avinashremala/Desktop/AvinashTesting/bin/Debug/net6.0/AvinashTesting.dll" adapterTypeName="executor://nunit3testexecutor/" className="AvinashTesting.Features.InvalidLoginTestFeature" name="LoginWithBothInvalidUsernameAndPassword" />
     </UnitTest>
     <UnitTest name="LoginWithInvalidPassword" storage="/users/avinashremala/desktop/avinashtesting/bin/debug/net6.0/avinashtesting.dll" id="ecb7188d-3397-ec50-2219-bf6f51112a04">
-      <Execution id="9b1e753a-0876-46cc-936d-d7f62a5a17da" />
+      <Execution id="c794ca99-c602-4dcf-a68d-a9c3f6153130" />
       <TestMethod codeBase="/Users/avinashremala/Desktop/AvinashTesting/bin/Debug/net6.0/AvinashTesting.dll" adapterTypeName="executor://nunit3testexecutor/" className="AvinashTesting.Features.InvalidLoginTestFeature" name="LoginWithInvalidPassword" />
     </UnitTest>
     <UnitTest name="SuccessfulLoginAndLogoutWithValidCredentials" storage="/users/avinashremala/desktop/avinashtesting/bin/debug/net6.0/avinashtesting.dll" id="bc50d387-b797-3881-6fa2-118623bb9edb">
-      <Execution id="63af3271-8b91-4c9e-880b-588b79215fe1" />
+      <Execution id="215768c7-adee-48c5-9b59-ee57238f07d0" />
       <TestMethod codeBase="/Users/avinashremala/Desktop/AvinashTesting/bin/Debug/net6.0/AvinashTesting.dll" adapterTypeName="executor://nunit3testexecutor/" className="AvinashTesting.Features.AviLoginTestFeature" name="SuccessfulLoginAndLogoutWithValidCredentials" />
     </UnitTest>
   </TestDefinitions>
   <TestEntries>
-    <TestEntry testId="ecb7188d-3397-ec50-2219-bf6f51112a04" executionId="9b1e753a-0876-46cc-936d-d7f62a5a17da" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="bc50d387-b797-3881-6fa2-118623bb9edb" executionId="63af3271-8b91-4c9e-880b-588b79215fe1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="68ad1630-9139-f55e-00a1-79ea02deb6c0" executionId="4973010d-4dc5-4b6f-a78b-98b705698586" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="7e553864-2619-065a-b95c-fcb4c8f766d7" executionId="632c2b49-2535-4ada-9f9f-160470b2ad2d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7e553864-2619-065a-b95c-fcb4c8f766d7" executionId="63b904c4-f4b0-466e-a8b2-0e0aac94bb83" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="68ad1630-9139-f55e-00a1-79ea02deb6c0" executionId="1b60a7b1-5fac-404a-8df3-2d743580ae38" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ecb7188d-3397-ec50-2219-bf6f51112a04" executionId="c794ca99-c602-4dcf-a68d-a9c3f6153130" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bc50d387-b797-3881-6fa2-118623bb9edb" executionId="215768c7-adee-48c5-9b59-ee57238f07d0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
   </TestEntries>
   <TestLists>
     <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
     <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
   </TestLists>
-  <ResultSummary outcome="Failed">
-    <Counters total="4" executed="4" passed="2" failed="2" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  <ResultSummary outcome="Completed">
+    <Counters total="4" executed="4" passed="4" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
     <Output>
       <StdOut>NUnit Adapter 4.6.0.0: Test execution started
 Running all tests in /Users/avinashremala/Desktop/AvinashTesting/bin/Debug/net6.0/AvinashTesting.dll
    NUnit3TestExecutor discovered 4 of 4 NUnit test cases using Current Discovery mode, Non-Explicit run
-Starting ChromeDriver 138.0.7204.94 (5450257488848fa5bab09dea663ce77edfb17672-refs/branch-heads/7204_50@{#10}) on port 52216
+Starting ChromeDriver 138.0.7204.94 (5450257488848fa5bab09dea663ce77edfb17672-refs/branch-heads/7204_50@{#10}) on port 53092
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully on port 52216.
+ChromeDriver was started successfully on port 53092.
 Given the user is on the Avi login page
 -&gt; done: AviLoginTestSteps.GivenTheUserIsOnTheAviLoginPage() (0.6s)
 When the user enters username 'student' and password 'Password123'
--&gt; done: AviLoginTestSteps.WhenTheUserEntersUsernameAndPassword("student", "Password123") (0.2s)
+-&gt; done: AviLoginTestSteps.WhenTheUserEntersUsernameAndPassword("student", "Password123") (0.3s)
 And clicks the login button
--&gt; done: AviLoginTestSteps.WhenClicksTheLoginButton() (0.2s)
+-&gt; done: AviLoginTestSteps.WhenClicksTheLoginButton() (0.6s)
 Then the user should be navigated to the secure area
 -&gt; done: AviLoginTestSteps.ThenTheUserShouldBeNavigatedToTheSecureArea() (0.0s)
 When the user clicks the logout button
@@ -155,52 +109,44 @@ When the user clicks the logout button
 Then the user should be logged out and redirected to the login page
 -&gt; done: AviLoginTestSteps.ThenTheUserShouldBeLoggedOutAndRedirectedToTheLoginPage() (0.0s)
 
-Starting ChromeDriver 138.0.7204.94 (5450257488848fa5bab09dea663ce77edfb17672-refs/branch-heads/7204_50@{#10}) on port 52284
+Starting ChromeDriver 138.0.7204.94 (5450257488848fa5bab09dea663ce77edfb17672-refs/branch-heads/7204_50@{#10}) on port 53155
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully on port 52284.
+ChromeDriver was started successfully on port 53155.
 Given the user is on the invalid login page
--&gt; done: InvalidLoginTestSteps.GivenTheUserIsOnTheInvalidLoginPage() (0.4s)
+-&gt; done: InvalidLoginTestSteps.GivenTheUserIsOnTheInvalidLoginPage() (0.6s)
 When the user enters invalid username 'invaliduser' and password 'invalidpassword'
 -&gt; done: InvalidLoginTestSteps.WhenTheUserEntersInvalidUsernameAndPassword("invaliduser", "invalidpassword") (0.2s)
 And clicks the invalid login button
--&gt; done: InvalidLoginTestSteps.WhenClicksTheInvalidLoginButton() (0.0s)
+-&gt; done: InvalidLoginTestSteps.WhenClicksTheInvalidLoginButton() (0.1s)
 Then the user should see an error message for invalid credentials
--&gt; error:   Expected to see an error message for invalid credentials
-Assert.That(_invalidLoginPage.IsInvalidCredentialsErrorDisplayed(), Is.True)
-  Expected: True
-  But was:  False
- (0.0s)
+-&gt; done: InvalidLoginTestSteps.ThenTheUserShouldSeeAnErrorMessageForInvalidCredentials() (0.0s)
 
-Starting ChromeDriver 138.0.7204.94 (5450257488848fa5bab09dea663ce77edfb17672-refs/branch-heads/7204_50@{#10}) on port 52320
+Starting ChromeDriver 138.0.7204.94 (5450257488848fa5bab09dea663ce77edfb17672-refs/branch-heads/7204_50@{#10}) on port 53193
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully on port 52320.
+ChromeDriver was started successfully on port 53193.
 Given the user is on the invalid login page
--&gt; done: InvalidLoginTestSteps.GivenTheUserIsOnTheInvalidLoginPage() (0.6s)
+-&gt; done: InvalidLoginTestSteps.GivenTheUserIsOnTheInvalidLoginPage() (0.5s)
 When the user enters invalid username 'student' and password 'invalidpassword'
--&gt; done: InvalidLoginTestSteps.WhenTheUserEntersInvalidUsernameAndPassword("student", "invalidpassword") (0.2s)
+-&gt; done: InvalidLoginTestSteps.WhenTheUserEntersInvalidUsernameAndPassword("student", "invalidpassword") (0.3s)
 And clicks the invalid login button
 -&gt; done: InvalidLoginTestSteps.WhenClicksTheInvalidLoginButton() (0.1s)
 Then the user should see an error message for invalid password
--&gt; error:   Expected to see an error message for invalid password
-Assert.That(_invalidLoginPage.IsInvalidPasswordErrorDisplayed(), Is.True)
-  Expected: True
-  But was:  False
- (0.0s)
+-&gt; done: InvalidLoginTestSteps.ThenTheUserShouldSeeAnErrorMessageForInvalidPassword() (0.1s)
 
-Starting ChromeDriver 138.0.7204.94 (5450257488848fa5bab09dea663ce77edfb17672-refs/branch-heads/7204_50@{#10}) on port 52358
+Starting ChromeDriver 138.0.7204.94 (5450257488848fa5bab09dea663ce77edfb17672-refs/branch-heads/7204_50@{#10}) on port 53233
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully on port 52358.
+ChromeDriver was started successfully on port 53233.
 Given the user is on the invalid login page
--&gt; done: InvalidLoginTestSteps.GivenTheUserIsOnTheInvalidLoginPage() (0.4s)
+-&gt; done: InvalidLoginTestSteps.GivenTheUserIsOnTheInvalidLoginPage() (0.6s)
 When the user enters invalid username 'invaliduser' and password 'Password123'
--&gt; done: InvalidLoginTestSteps.WhenTheUserEntersInvalidUsernameAndPassword("invaliduser", "Password123") (0.2s)
+-&gt; done: InvalidLoginTestSteps.WhenTheUserEntersInvalidUsernameAndPassword("invaliduser", "Password123") (0.3s)
 And clicks the invalid login button
 -&gt; done: InvalidLoginTestSteps.WhenClicksTheInvalidLoginButton() (0.1s)
 Then the user should see an error message for invalid username
--&gt; done: InvalidLoginTestSteps.ThenTheUserShouldSeeAnErrorMessageForInvalidUsername() (0.0s)
+-&gt; done: InvalidLoginTestSteps.ThenTheUserShouldSeeAnErrorMessageForInvalidUsername() (0.1s)
 
 NUnit Adapter 4.6.0.0: Test execution complete
 </StdOut>
